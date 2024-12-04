@@ -2,17 +2,17 @@ package main
 
 import (
 	"crypto/rand"
-	"encoding/hex"
+	"encoding/base64"
 	"fmt"
 	"time"
 )
 
 func generateToken() (string, error) {
-	bytes := make([]byte, 16)
+	bytes := make([]byte, 64)
 	if _, err := rand.Read(bytes); err != nil {
 		return "", err
 	}
-	return hex.EncodeToString(bytes), nil
+	return base64.RawURLEncoding.EncodeToString(bytes), nil
 }
 
 func AddToken(name, port string) error {
