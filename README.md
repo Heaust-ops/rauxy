@@ -14,6 +14,8 @@ But there's a problem. ollama is unauthorized. if you forward port 11434, all of
 
 Enter `rauxy`.
 
+---
+
 You can add auth tokens specifically for your friends,
 
 `rauxy add ollama_rodrico 11434`
