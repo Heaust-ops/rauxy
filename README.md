@@ -61,6 +61,8 @@ or use the pre-built binary, the file named `rauxy`
 
 once you clone the repo, `chmod +x ./rauxy` to make the binary executable
 
-and add a bash alias, `alias rauxy="/path/to/rauxy"` for easy global access!
+add a bash alias, `alias rauxy="/path/to/rauxy"` for easy global access
+
+and if you forget the commands, `rauxy help` to see usage!
 
 Have fun! :)
