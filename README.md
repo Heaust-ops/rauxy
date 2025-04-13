@@ -12,9 +12,9 @@ You're excited to port forward this so all your friends can use this to develop 
 
 But there's a problem. ollama is unauthorized. if you forward port 11434, all of internet will have access to it, and your flagship PC!
 
-Enter `rauxy`.
-
 ---
+
+Enter `rauxy`.
 
 You can add auth tokens specifically for your friends,
 
