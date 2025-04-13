@@ -3,14 +3,22 @@ package main
 import (
 	"database/sql"
 	"log"
+	"os"
+	"path/filepath"
 
 	_ "github.com/mattn/go-sqlite3"
 )
 
-const dbPath = "rauxy.db"
+func dbPath() string {
+	homeDir, err := os.UserHomeDir()
+	if err != nil {
+		log.Fatalf("Error getting home directory: %v", err)
+	}
+	return filepath.Join(homeDir, "rauxy.db")
+}
 
 func OpenDB() (*sql.DB, error) {
-	db, err := sql.Open("sqlite3", dbPath)
+	db, err := sql.Open("sqlite3", dbPath())
 	if err != nil {
 		return nil, err
 	}
