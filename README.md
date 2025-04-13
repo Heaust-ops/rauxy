@@ -53,4 +53,14 @@ You can revoke his token by `rauxy rm ollama_rodrico`
 
 Easy as that!
 
+---
+
+You can build it yourself with `go build`
+
+or use the pre-built binary, the file named `rauxy`
+
+once you clone the repo, `chmod +x ./rauxy` to make the binary executable
+
+and add a bash alias, `alias rauxy="/path/to/rauxy"` for easy global access!
+
 Have fun! :)
