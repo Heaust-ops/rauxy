@@ -1,4 +1,6 @@
-# Rauxy
+# Rauxy: Reverse Auth Proxy
+
+Note: this is for creating and validating api keys, not for general-purpose authentication.
 
 ## Manage auth protected proxies for your local services.
 
@@ -66,3 +68,5 @@ add a bash alias, `alias rauxy="/path/to/rauxy"` for easy global access
 and if you forget the commands, `rauxy help` to see usage!
 
 Have fun! :)
+
+Reddit Post: https://www.reddit.com/r/selfhosted/comments/1jy8dv8/i_made_a_reverse_proxy_w_auth_so_you_can_port/
